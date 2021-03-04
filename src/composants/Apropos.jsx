@@ -1,13 +1,17 @@
-import './Pied2Page.scss';
+import './Apropos.scss';
 import Fade from 'react-reveal/Fade';
 
-export default function Pied2Page(){
+export default function Apropos(){
     return(
         <div style={{overflow: 'hidden'}}>
-        <Fade bottom>
-        <div  className="Pied2Page">
-          <h1>Merci</h1>
-          <p>Design et programmation par Monica Léonard</p>
+        <Fade left>
+        <div  className="Apropos">
+          <Fade left>
+            <p className="gauche">Hey</p>
+          </Fade>
+          <Fade right>
+            <p className="droite">Un peu plus de moi</p>
+          </Fade>
         </div>
       </Fade>
       </div>

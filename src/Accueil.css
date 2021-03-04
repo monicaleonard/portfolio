@@ -1,0 +1,73 @@
+.Accueil {
+  height: 100vh;
+  margin: 0px;
+  padding: 0px;
+}
+
+.Accueil .imgPrincipale {
+  position: absolute;
+  top: 0px;
+  width: 50%;
+  height: 100vh;
+  overflow: hidden;
+  flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+}
+
+.Accueil .imgPrincipale img {
+  z-index: -100;
+  width: 100vw;
+  min-height: 100%;
+}
+
+.Accueil .navPrincipale {
+  z-index: 10;
+  position: absolute;
+  top: 0px;
+  width: 50%;
+  height: 100vh;
+  margin-left: 50%;
+  overflow: hidden;
+  background-color: lightpink;
+}
+
+.Accueil .navPrincipale ul {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  list-style: none;
+  text-align: center;
+  font-size: 1.8em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.Accueil .navPrincipale ul li {
+  cursor: pointer;
+}
+
+.Accueil .navPrincipale ul li a {
+  text-decoration: none;
+}
+
+.Accueil .navPrincipale ul li a:hover {
+  color: white;
+  text-decoration: underline;
+  padding: 0 10px 5px 10px;
+  background: rgba(220, 0, 172, 0.4);
+}
+
+@media only screen and (max-width: 700px) {
+  .Accueil .navPrincipale {
+    z-index: 10;
+    position: absolute;
+    top: 50%;
+    width: 100vw;
+    height: 50%;
+    overflow: hidden;
+    background-color: green;
+  }
+}
+/*# sourceMappingURL=Accueil.css.map */

@@ -1,4 +1,21 @@
 .Apropos {
     padding: 0;
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 0 10% 0 10%;
+    .gauche {
+        width: 50%;
+        height: 35%;
+        background-color: mediumorchid;
+        font-size: 1.8em;
+    }
+    .droite {
+        width: 50%;
+        height: 35%;
+        background-color: mediumorchid;
+        align-self: flex-end;
+        font-size: 1.7em;
+    }
 }

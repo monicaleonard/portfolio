@@ -1,5 +1,5 @@
 import './ListeProjets.scss';
-import dossTab from '../data/liste-Projets.json';
+import dossTab from '../data/liste-projets.json';
 import Projet from './Projet';
 
 export default function ListeProjets() {
@@ -7,7 +7,7 @@ export default function ListeProjets() {
     <ul className="ListeProjets">
       {
         dossTab.map( 
-          Projet =>  <li><Projet key={Projet.id} {...Projet} /></li>
+          projet =>  <li><Projet key={projet.id} {...projet} /></li>
         )
       }
     </ul>

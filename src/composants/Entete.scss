@@ -1,6 +1,8 @@
 .Entete {
     position: sticky;
     top: 0;
+    left: 0;
+    right: 0;
     z-index: 10;
     display: flex;
     margin: 0px;
@@ -13,4 +15,5 @@
     font-weight: medium;
     align-items: center;
     //transform: translateY(-50px);
+
 }

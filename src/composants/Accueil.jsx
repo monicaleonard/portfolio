@@ -6,16 +6,17 @@ export default function Accueil() {
   return (
     <div className="Accueil">
         <Fade left>
-          <div className="rRFade">
+          <div className="imgPrincipale">
             <img src={fond} alt=""/>
           </div>
         </Fade>
         <Fade right>
           <div className="navPrincipale">
             <ul>
-              <li>À propos de moi</li>
-              <li>Mes projets</li>
-              <li>Contactez-moi</li>
+              <div><li><a>À propos de moi</a></li></div>
+              <div><li><a>Mes projets</a></li></div>
+              <div><li><a>Contactez-moi</a></li></div>
+              
             </ul>
           </div>
         </Fade>
