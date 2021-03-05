@@ -1,15 +1,28 @@
 import './Projet.scss';
-export default function Projet({id, titre, info}) {
+import Fade from 'react-reveal/Fade';
+import HighlightOffIcon from '@material-ui/icons/HighlightOff';
+
+export default function Projet({id, titre, details, info}) {
+
   return (
-    <article className="Projet">
+    <div className="Projet">
+      <Fade left >
       <div className="couverture">
-        <img src={`images-projets/${id}.png`} alt={titre}/>
+        <a href={`#img-${id}`}>{titre}</a>
+        <p>{details}</p>
       </div>
-      <div className="info">
-        <h2>{titre}</h2>
-        <p>{info}</p>
+      </Fade>
+      <div >
+        <a href="#_" className="lightbox" id={`img-${id}`}>
+          <a href="#_"><HighlightOffIcon href="#_" className="fermerP" id={`img-${id}`} /></a>
+          <img src={`images-projets/${id}.png`} alt={titre}/>
+        </a>
+        <div className="info">
+          <p>{info}</p>
+        </div>
       </div>
       
-    </article>
+      
+    </div>
   );
 }

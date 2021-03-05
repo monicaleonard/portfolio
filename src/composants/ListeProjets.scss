@@ -1,9 +1,7 @@
 .ListeProjets {
     list-style: none;
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-around;
+    flex-direction: column;
     margin: 0;
     padding: 0;
 }
