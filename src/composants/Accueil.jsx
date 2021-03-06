@@ -12,9 +12,9 @@ export default function Accueil() {
         <Fade top>
           <div className="navPrincipale">
             <ul>
-              <div><li><a>À propos de moi</a></li></div>
-              <div><li><a>Mes projets</a></li></div>
-              <div><li><a>Contactez-moi</a></li></div>
+              <div><li><a href="#_">À propos de moi</a></li></div>
+              <div><li><a href="#_">Mes projets</a></li></div>
+              <div><li><a href="#_">Contactez-moi</a></li></div>
             </ul>
           </div>
         </Fade>
