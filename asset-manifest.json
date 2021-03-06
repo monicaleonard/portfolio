@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/mon-tp/static/css/main.e3a2d298.chunk.css",
+    "main.js": "/mon-tp/static/js/main.b3cc8b83.chunk.js",
+    "main.js.map": "/mon-tp/static/js/main.b3cc8b83.chunk.js.map",
+    "runtime-main.js": "/mon-tp/static/js/runtime-main.e75b130a.js",
+    "runtime-main.js.map": "/mon-tp/static/js/runtime-main.e75b130a.js.map",
+    "static/js/2.6abfe9cf.chunk.js": "/mon-tp/static/js/2.6abfe9cf.chunk.js",
+    "static/js/2.6abfe9cf.chunk.js.map": "/mon-tp/static/js/2.6abfe9cf.chunk.js.map",
+    "static/js/3.85f324b5.chunk.js": "/mon-tp/static/js/3.85f324b5.chunk.js",
+    "static/js/3.85f324b5.chunk.js.map": "/mon-tp/static/js/3.85f324b5.chunk.js.map",
+    "index.html": "/mon-tp/index.html",
+    "static/css/main.e3a2d298.chunk.css.map": "/mon-tp/static/css/main.e3a2d298.chunk.css.map",
+    "static/js/2.6abfe9cf.chunk.js.LICENSE.txt": "/mon-tp/static/js/2.6abfe9cf.chunk.js.LICENSE.txt",
+    "static/media/bunny.fd13dcae.jpg": "/mon-tp/static/media/bunny.fd13dcae.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e75b130a.js",
+    "static/js/2.6abfe9cf.chunk.js",
+    "static/css/main.e3a2d298.chunk.css",
+    "static/js/main.b3cc8b83.chunk.js"
+  ]
+}
