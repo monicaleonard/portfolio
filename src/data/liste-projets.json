@@ -1,12 +1,12 @@
 [
   {
-    "id": "d1",
+    "id": "essenceofye",
     "titre": "Essence of Ye",
     "details": "Prototype de jeu, modèlisation 3D, animations",
     "info": "3 février 2021"
   },
   {
-    "id": "d2",
+    "id": "10jours",
     "titre": "10 jours",
     "details": "Design graphique, animation",
     "info": "13 février 2021"
@@ -18,7 +18,7 @@
     "info": "11 janvier 2021"
   },
   {
-    "id": "d4",
+    "id": "homoioi",
     "titre": "Site Homoioi",
     "details": "Programmation HTML, CSS, PHP",
     "info": "23 décembre 2020"

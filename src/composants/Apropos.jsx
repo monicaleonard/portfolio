@@ -3,9 +3,8 @@ import Fade from 'react-reveal/Fade';
 
 export default function Apropos(){
     return(
-        <div style={{overflow: 'hidden'}}>
-        <Fade left>
-        <div  className="Apropos">
+      <div  className="Apropos">
+          <div className="contenu">
           <Fade left>
             <p className="gauche">Hey</p>
           </Fade>
@@ -13,7 +12,6 @@ export default function Apropos(){
             <p className="droite">Un peu plus de moi</p>
           </Fade>
         </div>
-      </Fade>
       </div>
     )
 }

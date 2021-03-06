@@ -6,17 +6,10 @@ import Apropos from './Apropos';
 import ListeProjets from './ListeProjets';
 
 export default function Appli() {
-  const height = window.innerHeigth;
   return (
     <div className="Appli">
-      {height > height*2
-      ? <Entete />
-      : console.log(window.innerHeight)
-    }
         <Accueil />
         <Entete />
-        <Apropos />
-        <Apropos />
         <Apropos />
         <ListeProjets />
       <Pied2Page />
