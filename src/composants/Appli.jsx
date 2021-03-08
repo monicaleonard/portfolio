@@ -4,14 +4,16 @@ import Entete from './Entete.jsx';
 import Pied2Page from './Pied2Page';
 import Apropos from './Apropos';
 import ListeProjets from './ListeProjets';
+import ScrollTop from './ScrollTop';
 
 export default function Appli() {
   return (
     <div className="Appli">
-        <Accueil />
-        <Entete />
-        <Apropos />
-        <ListeProjets />
+      <Accueil />
+      <Entete />
+      <ScrollTop />
+      <Apropos />
+      <ListeProjets />
       <Pied2Page />
     </div>
   );

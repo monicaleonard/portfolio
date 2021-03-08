@@ -1,0 +1,15 @@
+.ScrollTop {
+    position: fixed;
+    margin: 0;
+    padding: 0;
+    bottom: 1%;
+    right: 1%;
+    z-index: 9;
+    .iconBtn {
+        height: 60px;
+        .expBtn{
+            color: rgb(82, 6, 50);
+        }
+    }
+}
+

@@ -9,17 +9,25 @@
         justify-content: space-evenly;
         margin: 0 10% 0 10%;
         .gauche {
+            display: flex;
+            align-items: center;
             width: 50%;
             height: 35%;
-            background-color: mediumorchid;
-            font-size: 1.8em;
+            background-color: rgb(155, 47, 110);
+            font-size: 1.7em;
+            text-align: center;
+            color: white;
         }
         .droite {
+            display: flex;
+            align-items: center;
             width: 50%;
             height: 35%;
-            background-color: mediumorchid;
+            background-color: rgb(155, 47, 110);
             align-self: flex-end;
             font-size: 1.7em;
+            text-align: center;
+            color: white;
         }
     }
 
@@ -27,9 +35,11 @@
         .contenu {
             .gauche {
                 width: 80%;
+                font-size: 1.3em;
             }
             .droite {
                 width: 80%;
+                font-size: 1.3em;
             }
 
         }

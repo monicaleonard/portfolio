@@ -6,10 +6,14 @@ export default function Apropos(){
       <div  className="Apropos">
           <div className="contenu">
           <Fade left>
-            <p className="gauche">Hey</p>
+            <div className="gauche">
+            <p>Étudiante en techniques d'intégration multimédia au Collège de Maisonneuve</p>
+            </div>
           </Fade>
           <Fade right>
-            <p className="droite">Un peu plus de moi</p>
+            <div className="droite">
+            <p>Je suis autant passionnée par l'art, les jeux vidéo et les animaux que la technologie</p>
+            </div>
           </Fade>
         </div>
       </div>

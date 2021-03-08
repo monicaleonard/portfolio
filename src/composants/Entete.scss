@@ -1,28 +1,41 @@
 .Entete {
-    position: sticky;
+    margin: 0;
+    padding: 0;
+    height: 100%;
     width: 100vw;
+    position: sticky;
     top: 0;
     z-index: 10;
-    display: flex;
-    margin: 0px;
-    padding: 0px;
-    font-size: 1.2em;
-    height: 50px;
-    background-color: rgb(82, 6, 50);
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: medium;
-    align-items: center;
-    //transform: translateY(-50px);
-
-   
+    .contenu {
+        display: flex;
+        font-size: 1.2em;
+        height: 50px;
+        background-color: rgb(82, 6, 50);
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: medium;
+        align-items: center;
+        justify-content: space-between;
+        //transform: translateY(-50px);
+        .logo {
+            cursor: pointer;
+            margin-left: 3%;
+        }
+        .email {
+            margin-right: 5%;
+            color: white;
+            text-decoration: none;
+        }
+        .email:hover {
+            text-decoration: underline solid white 2px;
+        }
+    }
 }
 @media only screen and (max-width: 700px) {
     .Entete {
         margin-top: -60px;
-        .logo {
-            margin: 0;
-            padding: 0;
+        .email {
+            font-size: 0.8em;
         }
     }
 }

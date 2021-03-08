@@ -1,6 +1,7 @@
 import './Projet.scss';
 import Fade from 'react-reveal/Fade';
 import HighlightOffIcon from '@material-ui/icons/HighlightOff';
+import HelpOutlineIcon from '@material-ui/icons/HelpOutline';
 
 export default function Projet({id, titre, details, info}) {
 
@@ -11,7 +12,7 @@ export default function Projet({id, titre, details, info}) {
           <div className="couverture">
             <a href={`#img-${id}`}>
               {titre}
-              <img src={`mon-tp/images-projets/${id}.png`} alt={titre}/>
+              <img src={`portfolio/images-projets/${id}.png`} alt={titre}/>
             </a>
             <p>{details}</p>
           </div>
@@ -20,11 +21,12 @@ export default function Projet({id, titre, details, info}) {
       <div >
         <a href="#_" className="lightbox" id={`img-${id}`}>
           <a href="#_"><HighlightOffIcon href="#_" className="fermerP" id={`img-${id}`} /></a>
-          <video src={`mon-tp/videos-projets/${id}.mp4`} alt={titre} controls/>
+          <video src={`portfolio/videos-projets/${id}.mp4`} alt={titre} controls/>
+          <a href="#_"  className="moreinfo">
+          <p className="info">{info}</p>
+            <HelpOutlineIcon className="pointInter" />
+          </a>
         </a>
-        <div className="info">
-          <p>{info}</p>
-        </div>
       </div>
     </div>
   );
