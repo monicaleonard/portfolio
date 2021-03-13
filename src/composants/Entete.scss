@@ -20,14 +20,25 @@
         .logo {
             cursor: pointer;
             margin-left: 3%;
+            img {
+                height: 40px;
+            }
         }
-        .email {
-            margin-right: 5%;
-            color: white;
-            text-decoration: none;
-        }
-        .email:hover {
-            text-decoration: underline solid white 2px;
+        div {
+            margin-right: 3%;
+            display: flex;
+            flex-wrap: nowrap;
+            a {
+                padding: 0;
+                margin: 0 10px 0 0;
+                color: rgb(204, 204, 204);
+                text-decoration: none;
+                flex-wrap: nowrap;
+            }
+            a:hover {
+                color: white;
+                text-decoration: underline solid white 2px;
+            }
         }
     }
 }

@@ -12,7 +12,7 @@ export default function Projet({id, titre, details, info}) {
           <div className="couverture">
             <a href={`#img-${id}`}>
               {titre}
-              <img src={`portfolio/images-projets/${id}.png`} alt={titre}/>
+              <img src={`images-projets/${id}.png`} alt={titre}/>
             </a>
             <p>{details}</p>
           </div>
@@ -21,7 +21,7 @@ export default function Projet({id, titre, details, info}) {
       <div >
         <a href="#_" className="lightbox" id={`img-${id}`}>
           <a href="#_"><HighlightOffIcon href="#_" className="fermerP" id={`img-${id}`} /></a>
-          <video src={`portfolio/videos-projets/${id}.mp4`} alt={titre} controls/>
+          <video src={`videos-projets/${id}.mp4`} alt={titre} controls/>
           <a href="#_"  className="moreinfo">
           <p className="info">{info}</p>
             <HelpOutlineIcon className="pointInter" />
