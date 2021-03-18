@@ -13,7 +13,7 @@ export default function Accueil() {
         <Fade top>
           <div className="navPrincipale">
             <div className="titre-entete">
-              <img src={logo} className="logo-img" />
+              <img src={logo} className="logo-img" alt="logo" />
               <p>Monica Léonard</p>
             </div>
             <ul>

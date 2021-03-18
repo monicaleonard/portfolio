@@ -7,12 +7,17 @@ export default function Apropos(){
           <div className="contenu">
           <Fade left>
             <div className="gauche">
-            <p>Étudiante en techniques d'intégration multimédia au Collège de Maisonneuve</p>
+            <p>Bienvenue! Mon nom est <span>Monica Léonard</span></p>
             </div>
           </Fade>
-          <Fade right>
+          <Fade left delay={500}>
+            <div className="milieu">
+            <p>Je suis une étudiante en techniques d'intégration multimédia au Collège de Maisonneuve</p>
+            </div>
+          </Fade>
+          <Fade right delay={1000}>
             <div className="droite">
-            <p>Je suis autant passionnée par l'art, les jeux vidéo et les animaux que la technologie</p>
+            <p>Je suis autant passionnée par la programmation et le design que par les jeux vidéos</p>
             </div>
           </Fade>
         </div>

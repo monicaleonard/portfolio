@@ -5,9 +5,11 @@ import IconButton from '@material-ui/core/IconButton';
 export default function ScrollTop() {
     return (
         <div className="ScrollTop">
-            <IconButton className="iconBtn">
-                <p onClick={() => window.scrollTo({top: 0, behavior: 'smooth'})}><ExpandLessIcon fontSize="large" className="expBtn" /></p>
-            </IconButton>
+            <div className="btn" onClick={() => window.scrollTo({top: 0, behavior: 'smooth'})}>
+                <IconButton className="iconBtn" >
+                    <ExpandLessIcon fontSize="large" className="expBtn" />
+                </IconButton>
+            </div>
         </div>
     )
 }

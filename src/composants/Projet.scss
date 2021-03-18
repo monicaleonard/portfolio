@@ -22,18 +22,23 @@
             text-align: center;
             transition: 0.1s;
             img {
-                height: 50vh;
                 display: none;
             }
         }
         a:hover {
             text-decoration: underline;
-            margin-left: 50px;
             //text-decoration: line-through 10px solid #8b0051b3;
+            //background-color: yellowgreen;
             background: #8b0051;
             //background: linear-gradient(to bottom, #8b0051, rgba(255, 255, 255, 0));
             color: rgb(255, 255, 255);
             img {
+                position: absolute;
+                right: 10px;
+                //opacity: 80%;
+                height: 30vh;
+                box-shadow: 0 8px 20px 10px rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.19);
+                z-index: 1000;
                 display:block;
             }
         }
@@ -94,6 +99,7 @@
             pointer-events: none;
             .pointInter {
                 pointer-events: visible;
+                color: darkred;
             }
             .info {
                 display: block;
@@ -137,6 +143,9 @@
 }
 @media only screen and (max-width: 700px) {
     .Projet {
+            img {
+                height: 20vh;
+            }
         .lightbox:target {
             video {
                 width: 90vw;

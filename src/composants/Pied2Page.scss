@@ -1,20 +1,23 @@
 .Pied2Page {
         padding: 0;
         margin: 0;
+        position: sticky;
+        bottom: 0;
+        z-index: 7;
+        width: 100vw;
     .contenu{
-        background-color: yellowgreen;
-        height: 100vh;
+        height: 50px;
+        color: white;
+        border-top: 1px solid white;
+        background-color: rgba(82, 6, 50, 0.349);
+        //background-color: yellowgreen;
         display: flex;
         flex-direction: column;
         justify-content: center;
         text-align: center;
-        h1 {
-            color:  rgb(82, 6, 50);
-            font-size: 10em;
-            align-self: center;
-        }
         p {
-            align-self: center;
+        padding: 0;
+        margin: 0;
         }
 
     }
@@ -23,8 +26,8 @@
 @media screen and (max-width: 700px) {
     .Pied2Page {
         .contenu {
-            h1 {
-                font-size: 5em;
+            p {
+                font-size: 0.7em;
             }
         }
     }

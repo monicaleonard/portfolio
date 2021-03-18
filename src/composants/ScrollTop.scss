@@ -2,13 +2,16 @@
     position: fixed;
     margin: 0;
     padding: 0;
-    bottom: 1%;
+    bottom: 60px;
     right: 1%;
-    z-index: 9;
-    .iconBtn {
-        height: 60px;
-        .expBtn{
-            color: rgb(82, 6, 50);
+    z-index: 1;
+    .btn {
+        .iconBtn {
+            height: 60px;
+            background-color: rgb(166, 228, 42);
+            .expBtn{
+                color: rgb(82, 6, 50);
+            }
         }
     }
 }

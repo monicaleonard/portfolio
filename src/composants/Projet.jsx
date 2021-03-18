@@ -11,8 +11,8 @@ export default function Projet({id, titre, details, info}) {
         <Fade left >
           <div className="couverture">
             <a href={`#img-${id}`}>
-              {titre}
               <img src={`images-projets/${id}.png`} alt={titre}/>
+              {titre}
             </a>
             <p>{details}</p>
           </div>
@@ -20,12 +20,12 @@ export default function Projet({id, titre, details, info}) {
       </div>
       <div >
         <a href="#_" className="lightbox" id={`img-${id}`}>
-          <a href="#_"><HighlightOffIcon href="#_" className="fermerP" id={`img-${id}`} /></a>
+          <HighlightOffIcon className="fermerP" />
           <video src={`videos-projets/${id}.mp4`} alt={titre} controls/>
-          <a href="#_"  className="moreinfo">
+          <div href="#_"  className="moreinfo">
           <p className="info">{info}</p>
             <HelpOutlineIcon className="pointInter" />
-          </a>
+          </div>
         </a>
       </div>
     </div>
