@@ -17,6 +17,12 @@
         align-items: center;
         justify-content: space-between;
         //transform: translateY(-50px);
+        .menuButton {
+            color: white;
+        }
+        .boiteDialogue {
+            background-color: rgb(255, 233, 248);
+        }
         .logo {
             cursor: pointer;
             margin-left: 3%;

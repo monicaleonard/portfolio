@@ -1,0 +1,158 @@
+.Projet {
+  width: 100vw;
+  align-self: center;
+  margin-top: 40px;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /******************** LIGHTBOX *************************/
+}
+
+.Projet .couverture {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.Projet .couverture a {
+  font-size: 1.8em;
+  color: #303030;
+  text-decoration: none;
+  text-align: center;
+  transition: 0.1s;
+}
+
+.Projet .couverture a img {
+  display: none;
+}
+
+.Projet .couverture a:hover {
+  text-decoration: underline;
+  background: #8b0051;
+  color: white;
+}
+
+.Projet .couverture a:hover img {
+  position: absolute;
+  right: 10px;
+  height: 30vh;
+  box-shadow: 0 8px 20px 10px rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.19);
+  z-index: 1000;
+  display: block;
+}
+
+.Projet .couverture p {
+  color: #242424;
+}
+
+.Projet .lightbox {
+  /** Default lightbox to hidden */
+  opacity: 0;
+  z-index: -1;
+  display: grid;
+  place-content: center;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(44, 1, 35, 0.72);
+  backdrop-filter: blur(5px);
+}
+
+.Projet .lightbox .fermerP {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  margin: 0;
+  padding: 0;
+  font-size: 40px;
+  color: white;
+}
+
+.Projet .lightbox .fermerP:hover {
+  color: crimson;
+}
+
+.Projet .lightbox .fermerP:target {
+  animation: move2 1s;
+}
+
+.Projet .lightbox .moreinfo .pointInter {
+  color: white;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  margin: 0;
+  padding: 0;
+  font-size: 30px;
+  z-index: 900;
+}
+
+.Projet .lightbox .moreinfo .info {
+  display: none;
+  color: white;
+  text-decoration: none;
+}
+
+.Projet .lightbox .moreinfo:hover {
+  background-color: darkred;
+  pointer-events: none;
+}
+
+.Projet .lightbox .moreinfo:hover .pointInter {
+  pointer-events: visible;
+  color: darkred;
+}
+
+.Projet .lightbox .moreinfo:hover .info {
+  display: block;
+  pointer-events: none;
+}
+
+.Projet .lightbox:target {
+  opacity: 1;
+  z-index: 50;
+  animation: move1 1s;
+}
+
+.Projet .lightbox:target video {
+  width: 70vw;
+}
+
+/******************** Animation *************************/
+@keyframes move1 {
+  0% {
+    transform: translateX(-1000px);
+    backdrop-filter: blur(20px);
+  }
+  100% {
+    transform: translateX(0px);
+    backdrop-filter: blur(0px);
+  }
+}
+
+@keyframes move2 {
+  0% {
+    transform: translateX(0px);
+    backdrop-filter: blur(20px);
+  }
+  100% {
+    transform: translateX(1000px);
+    backdrop-filter: blur(0px);
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .Projet img {
+    height: 20vh;
+  }
+  .Projet .lightbox:target video {
+    width: 90vw;
+  }
+}
+/*# sourceMappingURL=Projet.css.map */

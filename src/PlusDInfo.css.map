@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,UAAU,CAAC;EACP,MAAM,EAAE,KAAK;EACb,KAAK,EAAE,KAAK;EACZ,gBAAgB,EAAE,OAAO;EACzB,OAAO,EAAE,GAAG;CACf",
+    "sources": [
+        "composants/PlusDInfo.scss"
+    ],
+    "names": [],
+    "file": "PlusDInfo.css"
+}

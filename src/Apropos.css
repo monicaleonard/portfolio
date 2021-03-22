@@ -1,0 +1,54 @@
+.Apropos {
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+}
+
+.Apropos .contenu {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin: 10% 10% 0 10%;
+}
+
+.Apropos .contenu .gauche,
+.Apropos .contenu .milieu,
+.Apropos .contenu .droite {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  height: 25%;
+  background-color: #9b2f6e;
+  font-size: 1.1em;
+  text-align: center;
+  color: white;
+}
+
+.Apropos .contenu .gauche p,
+.Apropos .contenu .milieu p,
+.Apropos .contenu .droite p {
+  margin: 0 10px 0 10px;
+}
+
+.Apropos .contenu .gauche p span,
+.Apropos .contenu .milieu p span,
+.Apropos .contenu .droite p span {
+  color: #a6e42a;
+}
+
+.Apropos .contenu .milieu {
+  margin-left: 10vw;
+}
+
+.Apropos .contenu .droite {
+  align-self: flex-end;
+}
+
+@media only screen and (max-width: 700px) {
+  .Apropos .contenu .gauche, .Apropos .contenu .milieu, .Apropos .contenu .droite {
+    width: 80%;
+    font-size: 1.1em;
+  }
+}
+/*# sourceMappingURL=Apropos.css.map */

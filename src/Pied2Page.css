@@ -1,0 +1,31 @@
+.Pied2Page {
+  padding: 0;
+  margin: 0;
+  position: sticky;
+  bottom: 0;
+  z-index: 7;
+  width: 100vw;
+}
+
+.Pied2Page .contenu {
+  height: 50px;
+  color: white;
+  border-top: 1px solid white;
+  background-color: rgba(82, 6, 50, 0.349);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.Pied2Page .contenu p {
+  padding: 0;
+  margin: 0;
+}
+
+@media screen and (max-width: 700px) {
+  .Pied2Page .contenu p {
+    font-size: 0.7em;
+  }
+}
+/*# sourceMappingURL=Pied2Page.css.map */

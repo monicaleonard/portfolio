@@ -1,0 +1,18 @@
+.ScrollTop {
+  position: fixed;
+  margin: 0;
+  padding: 0;
+  bottom: 60px;
+  right: 1%;
+  z-index: 1;
+}
+
+.ScrollTop .btn .iconBtn {
+  height: 60px;
+  background-color: #a6e42a;
+}
+
+.ScrollTop .btn .iconBtn .expBtn {
+  color: #520632;
+}
+/*# sourceMappingURL=ScrollTop.css.map */

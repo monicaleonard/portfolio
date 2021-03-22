@@ -1,0 +1,68 @@
+.Entete {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100vw;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.Entete .contenu {
+  display: flex;
+  font-size: 1.2em;
+  height: 50px;
+  background-color: #520632;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: medium;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Entete .contenu .menuButton {
+  color: white;
+}
+
+.Entete .contenu .boiteDialogue {
+  background-color: #ffe9f8;
+}
+
+.Entete .contenu .logo {
+  cursor: pointer;
+  margin-left: 3%;
+}
+
+.Entete .contenu .logo img {
+  height: 40px;
+}
+
+.Entete .contenu div {
+  margin-right: 3%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+
+.Entete .contenu div a {
+  padding: 0;
+  margin: 0 15px 0 0;
+  color: #cccccc;
+  text-decoration: none;
+  flex-wrap: nowrap;
+}
+
+.Entete .contenu div a:hover {
+  color: white;
+  text-decoration: underline solid white 2px;
+}
+
+@media only screen and (max-width: 700px) {
+  .Entete {
+    margin-top: -60px;
+  }
+  .Entete .email {
+    font-size: 0.8em;
+  }
+}
+/*# sourceMappingURL=Entete.css.map */
