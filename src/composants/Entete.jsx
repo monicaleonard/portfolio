@@ -12,27 +12,32 @@ import Divider from '@material-ui/core/Divider';
 import CloseIcon from '@material-ui/icons/Close';
 import Slide from '@material-ui/core/Slide';
 
+// Animation de transition pour le menu burger
 const Transition = React.forwardRef(function Transition(props, ref) {
     return <Slide direction="up" ref={ref} {...props} />;
   });
 
 export default function Entete(){
 
+    // Variable utiliser pour l'ouverture du menu
     const [open, setOpen] = React.useState(false);
-    
+     // Ouverture du menu
     const handleClickOpen = () => {
         setOpen(true);
     };
     
+    // Fermeture du menu
     const handleClose = () => {
         setOpen(false);
     };
 
+    // Défiler la page à la section et fermeture du menu
     const btnAPM = () => {
         handleClose();
         window.scrollTo({top: window.innerHeight, behavior: 'smooth'});
     };
 
+    // Défiler la page à la section et fermeture du menu
     const btnP = () => {
         handleClose();
         window.scrollTo({top: window.innerHeight*2, behavior: 'smooth'});
