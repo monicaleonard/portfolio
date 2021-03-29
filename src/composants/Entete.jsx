@@ -17,6 +17,17 @@ const Transition = React.forwardRef(function Transition(props, ref) {
     return <Slide direction="up" ref={ref} {...props} />;
   });
 
+  const monstyle = {
+    //color: "white",
+    margin: "5%"
+  };
+
+  const style = {
+      position: "absolute",
+      right: "5px",
+      textAlign: "right"
+  }
+
 export default function Entete(){
 
     // Variable utiliser pour l'ouverture du menu
@@ -47,52 +58,50 @@ export default function Entete(){
         <div className="Entete">
             <Fade top>
                 <div className="contenu">
-                    <Toolbar>
-                        <IconButton className="menuButton">
-                            <MenuIcon onClick={handleClickOpen} />
-                        </IconButton>
-                        <p 
-                            className="logo" 
-                            onClick={() => window.scrollTo({top: 0, behavior: 'smooth'})}
-                        >
-                            <img src={logo} className="logo-img" alt="logo" />
-                        </p>
+                    <p
+                        className="logo" 
+                        onClick={() => window.scrollTo({top: 0, behavior: 'smooth'})}
+                    >
+                        <img src={logo} className="logo-img" alt="logo" />
+                    </p>
+                    <MenuIcon className="menuButton" onClick={handleClickOpen} />
+                        
                 
-                        <Dialog  
-                            className="boiteDialogue" 
-                            PaperProps={{
-                              style: {
+                    <Dialog  
+                        className="boiteDialogue" 
+                        PaperProps={{
+                            style: {
                                 backgroundColor: "rgb(255, 233, 248)",
-                                boxShadow: "none"
-                              },
-                            }}
-                            fullScreen open={open} 
-                            onClose={handleClose} 
-                            bodyStyle={{backgroundColor: 'rgb(255, 233, 248)'}}
-                            TransitionComponent={Transition}
-                        >
-                            
-                            <Toolbar>
-                                <IconButton 
-                                    edge="start" 
-                                    color="inherit" 
-                                    onClick={handleClose} 
-                                    aria-label="close"
-                                >
-                                    <CloseIcon />
-                                </IconButton>
-                            </Toolbar>
-                            <List>
-                                <ListItem button>
-                                    <a href="#_" onClick={btnAPM}>À propos de moi</a>
-                                </ListItem>
-                                <Divider />
-                                <ListItem button>
-                                    <a href="#_" onClick={btnP}>Mes projets</a>
-                                </ListItem>
-                            </List>
-                        </Dialog>
-                    </Toolbar>
+                                boxShadow: "none",
+                                height: "100vh"
+                            },
+                        }}
+                        fullScreen open={open} 
+                        onClose={handleClose} 
+                        TransitionComponent={Transition}
+                    >
+                        
+                        <Toolbar>
+                            <IconButton 
+                                edge="start" 
+                                color="inherit" 
+                                onClick={handleClose} 
+                                aria-label="close"
+                            >
+                                <CloseIcon />
+                            </IconButton>
+                        </Toolbar>
+                        <List>
+                            <ListItem style={monstyle} button>
+                                <h1 href="#_" onClick={btnAPM}>À propos de moi</h1>
+                            </ListItem>
+                            <Divider />
+                            <ListItem style={monstyle} button>
+                                <h1 href="#_" onClick={btnP}>Mes projets</h1>
+                            </ListItem>
+                            <h3 style={style}>leonardmonica17@gmail.com</h3>
+                        </List>
+                    </Dialog>
                 </div>
             </Fade>
         </div>
