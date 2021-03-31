@@ -17,9 +17,9 @@ export default function Accueil() {
               <p>Monica Léonard</p>
             </div>
             <ul>
-              <li><a href="#_" onClick={() => window.scrollTo({top: window.innerHeight, behavior: 'smooth'})}>À propos de moi</a></li>
-              <li><a href="#_" onClick={() => window.scrollTo({top: window.innerHeight*2, behavior: 'smooth'})}>Mes projets</a></li>
-              <li><a href="#_" onClick={() => window.scrollTo({top: document.body.scrollHeight, behavior: 'smooth'})}>Contactez-moi</a></li>
+              <li><a href="#_" onClick={() => window.scrollTo({top: window.innerHeight*1.1, behavior: 'smooth'})}>À propos de moi</a></li>
+              <li><a href="#_" onClick={() => window.scrollTo({top: window.innerHeight*2.3, behavior: 'smooth'})}>Mes projets</a></li>
+              <li><span className="contact">leonardmonica17@gmail.com</span></li>
             </ul>
           </div>
         </Fade>

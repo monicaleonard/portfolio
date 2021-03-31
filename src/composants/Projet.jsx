@@ -1,7 +1,6 @@
 import './Projet.scss';
 import Fade from 'react-reveal/Fade';
 import HighlightOffIcon from '@material-ui/icons/HighlightOff';
-import HelpOutlineIcon from '@material-ui/icons/HelpOutline';
 
 export default function Projet({id, titre, details, info}) {
 
@@ -20,7 +19,7 @@ export default function Projet({id, titre, details, info}) {
       <div >
         <a href="#_" className="lightbox" id={`img-${id}`}>
           <HighlightOffIcon className="fermerP" />
-          <video src={`videos-projets/${id}.mp4`} alt={titre} controls/>
+          <video src={`medias-projets/${id}.mp4`} alt={titre} controls/>
           <p className="info">{info}</p>
         </a>
       </div>
