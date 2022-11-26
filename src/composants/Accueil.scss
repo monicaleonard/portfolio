@@ -55,10 +55,10 @@
         ul {
             padding: 0;
             margin: 0;
-            height: 100vh;
+            height: 90vh;
             list-style: none;
             text-align: center;
-            font-size: 1.8em;
+            font-size: 1.6em;
             display: flex;
             flex-direction: column;
             justify-content: space-evenly;
@@ -72,7 +72,7 @@
                 a:hover {
                     color: white;
                     text-decoration: underline;
-                    padding: 0 15% 5px 15%;
+                    padding: 0 2% 5px 2%;
                     background: radial-gradient(circle, rgba(139,0,81,1) 0%, rgba(139,0,81,1) 47%, rgba(252,70,107,0) 100%);
         
                 }
@@ -84,9 +84,16 @@
                 span:hover {
                     color: white;
                     text-decoration: underline;
-                    padding: 0 15% 5px 15%;
+                    //padding: 0 0% 0 0%;
                     background: radial-gradient(circle, rgba(139,0,81,1) 0%, rgba(139,0,81,1) 47%, rgba(252,70,107,0) 100%);
                 }
+            }
+            .liens {
+                color: white;
+                //margin: 0 5% 0 5%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
             }
         }
     }

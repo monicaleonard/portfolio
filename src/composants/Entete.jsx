@@ -11,6 +11,7 @@ import List from '@material-ui/core/List';
 import Divider from '@material-ui/core/Divider';
 import CloseIcon from '@material-ui/icons/Close';
 import Slide from '@material-ui/core/Slide';
+//import GitHubIcon from '@mui/icons-material/GitHub';
 
 // Animation de transition pour le menu burger
 const Transition = React.forwardRef(function Transition(props, ref) {
